@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CouchPlayScreenComponent } from './couch-play-screen.component';
+import { LoginButtonComponent } from './login-button.component';
 
-describe('CouchPlayScreenComponent', () => {
-  let component: CouchPlayScreenComponent;
-  let fixture: ComponentFixture<CouchPlayScreenComponent>;
+describe('LoginButtonComponent', () => {
+  let component: LoginButtonComponent;
+  let fixture: ComponentFixture<LoginButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CouchPlayScreenComponent]
+      imports: [LoginButtonComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CouchPlayScreenComponent);
+    fixture = TestBed.createComponent(LoginButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
