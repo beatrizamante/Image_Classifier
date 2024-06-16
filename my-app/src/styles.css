@@ -5,5 +5,18 @@
 @tailwind utilities;
 
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 14px;
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
+.checked .fill-current {
+  color: white; /* Icon color */
+}
+
+.checked .btm-nav-label {
+  color: white; /* Text color */
 }

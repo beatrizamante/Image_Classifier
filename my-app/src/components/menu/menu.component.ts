@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css'
+  styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
+  selectedMenu: string = 'browse';
 
+  selectMenu(menu: string) {
+    this.selectedMenu = menu;
+  }
 }
