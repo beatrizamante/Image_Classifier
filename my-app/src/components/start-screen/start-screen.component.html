@@ -1,1 +1,10 @@
-<p>start-screen works!</p>
+<div *ngIf="games.length > 0">
+    <ul>
+      <li *ngFor="let game of games">
+        {{ game.name }}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="games.length === 0">
+    <p>Nenhum jogo encontrado.</p>
+  </div>
