@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { StartScreenComponent } from '../components/start-screen/start-screen/start-screen.component';
+import { StartScreenComponent } from '../components/start-screen/start-screen.component';
 import { BrowseScreenComponent } from '../components/browse-screen/browse-screen.component';
 import { AccountScreenComponent } from '../components/account-screen/account-screen.component';
 import { CouchplayScreenComponent } from '../components/couchplay-screen/couchplay-screen.component';
