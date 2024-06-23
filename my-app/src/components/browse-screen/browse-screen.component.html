@@ -1,6 +1,8 @@
-<h1 class="text-2xl">Browse</h1>
-<p>Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Si num tem leite então bota uma pinga aí cumpadi!
-<div>
-    <img class="w-50 h-50"  src="../../assets/images/file.jpeg" alt="">
-</div>
-
+<div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let game of games">
+        <app-cards-to-rent [game]="game"></app-cards-to-rent>
+      </div>
+    </div>
+  </div>
+  
