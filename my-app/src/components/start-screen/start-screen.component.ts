@@ -8,10 +8,7 @@ import { CardsToRentComponent } from "../cards-to-rent/cards-to-rent.component";
     standalone: true,
     templateUrl: './start-screen.component.html',
     styleUrl: './start-screen.component.css',
-    imports: [
-        CommonModule,
-        CardsToRentComponent
-    ]
+    imports: [CommonModule,CardsToRentComponent]
 })
 export class StartScreenComponent implements OnInit{
   games: any[] = [];
