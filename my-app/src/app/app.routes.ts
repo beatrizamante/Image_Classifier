@@ -4,6 +4,10 @@ import { BrowseScreenComponent } from '../components/browse-screen/browse-screen
 import { AccountScreenComponent } from '../components/account-screen/account-screen.component';
 import { CouchplayScreenComponent } from '../components/couchplay-screen/couchplay-screen.component';
 import { RentedScreenComponent } from '../components/rented-screen/rented-screen.component';
+import { SignInScreenComponent } from '../components/sign-in-screen/sign-in-screen.component';
+
+import { ForgotPasswordScreenComponent } from '../components/forgot-password-screen/forgot-password-screen.component';
+
 import { LoginScreenComponent } from '../components/login-screen/login-screen.component';
 import { AuthenticationGuard } from '../app/util/authentication.guard' 
 import { NgModule } from '@angular/core';
@@ -11,6 +15,8 @@ import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     {path: '', component: LoginScreenComponent},
+    {path: 'forgot-password-screen', component: ForgotPasswordScreenComponent},
+    {path: 'sign-in-screen', component: SignInScreenComponent},
     {path: 'start-screen', component: StartScreenComponent, canActivate: [AuthenticationGuard]},
     {path: 'browse-screen', component: BrowseScreenComponent, canActivate: [AuthenticationGuard]},
     {path: 'account-screen', component: AccountScreenComponent, canActivate: [AuthenticationGuard]},
