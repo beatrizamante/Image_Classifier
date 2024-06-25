@@ -5,22 +5,22 @@
     </div>
     <form class="w-full max-w-xs" (ngSubmit)="onLogin()">
       <label class="flex items-center gap-2 mb-4 relative custom-input ">
-        <input 
+        <input
           id="input-username"
-          type="text" 
-          class="text-2xl h-12 bg-zinc-500 grow rounded-bl-[32px] placeholder-center text-center pt-4 pb-2" 
+          type="text"
+          class="text-2xl h-12 bg-zinc-500 grow rounded-bl-[32px] placeholder-center text-center pt-4 pb-2 border-t-4 border-t-zinc-400 focus:border-orange-500"
           placeholder="Email_"
           [(ngModel)]="this.loginUser.username"
           [ngModelOptions]="{standalone: true}"
          />
       </label>
       <label class="flex items-center gap-2 relative custom-input">
-        <input 
-          type="password" 
+        <input
+          type="password"
           id="input-password"
-          class="text-2xl h-12 grow bg-zinc-500 rounded-bl-[32px] text-center pt-4 pb-2" 
+          class="text-2xl h-12 grow bg-zinc-500 rounded-bl-[32px] text-center pt-4 pb-2 border-t-4 border-t-zinc-400 focus:border-orange-500"
           placeholder="Password_"
-          [(ngModel)]="this.loginUser.password" 
+          [(ngModel)]="this.loginUser.password"
           [ngModelOptions]="{standalone: true}"
           />
       </label>
