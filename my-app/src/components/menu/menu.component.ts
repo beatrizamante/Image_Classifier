@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-  selectedMenu: string = 'browse';
+  selectedMenu: string = 'home';
 
   selectMenu(menu: string) {
     this.selectedMenu = menu;
