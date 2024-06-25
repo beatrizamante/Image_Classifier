@@ -10,10 +10,11 @@
   Loading games...
 </div>-->
 
-<div *ngIf="games.length > 0" class="carousel carousel-center bg-zinc-900 rounded-box max-w-md space-x-4 p-4">
-  <div *ngFor="let game of games" class="carousel-item w-44 h-68">
-    <img
+<div *ngIf="games.length > 0" class="carousel carousel-center bg-zinc-900 rounded-box p-4 w-full max-w-full mx-auto space-x-4">
+  <div *ngFor="let game of games" class="carousel-item w-32 h-48 sm:w-36 sm:h-52 md:w-40 md:h-56 lg:w-44 lg:h-60 xl:w-48 xl:h-64 2xl:w-52 2xl:h-68">
+    <img id="image"
       [src]="game.background_image"
       class="rounded-box w-full h-full object-cover" />
+      <h5 id="text"></h5>
   </div>
 </div>
