@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { RawgApiService } from '../../app/rawg-api.service';
 import { CommonModule } from '@angular/common';
+import { BannerComponent } from '../banner/banner.component'
 
 @Component({
     selector: 'app-start-screen',
     standalone: true,
     templateUrl: './start-screen.component.html',
     styleUrl: './start-screen.component.css',
-    imports: [CommonModule]
+    imports: [CommonModule, BannerComponent]
 })
 export class StartScreenComponent implements OnInit{
   games: any[] = [];

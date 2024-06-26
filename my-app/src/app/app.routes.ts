@@ -9,7 +9,7 @@ import { SignInScreenComponent } from '../components/sign-in-screen/sign-in-scre
 import { ForgotPasswordScreenComponent } from '../components/forgot-password-screen/forgot-password-screen.component';
 
 import { LoginScreenComponent } from '../components/login-screen/login-screen.component';
-import { AuthenticationGuard } from '../app/util/authentication.guard' 
+import { AuthenticationGuard } from '../app/util/authentication.guard'
 import { NgModule } from '@angular/core';
 
 
@@ -30,5 +30,5 @@ export const routes: Routes = [
     exports: [RouterModule],
     providers: [AuthenticationGuard],
   })
-  
+
   export class AppRoutingModule {}

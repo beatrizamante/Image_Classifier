@@ -1,5 +1,4 @@
 <!--<<<<<<< HEAD-->
-<app-navbar></app-navbar>
 <!--=======-->
 <!--<<<<<<< HEAD-->
 
@@ -13,5 +12,9 @@
 <!--=======-->
 
 <!-- >>>>>>> d8fdc86 (Couch-play card)-->
+<div *ngIf="showNavbarAndMenu()">
+  <app-navbar></app-navbar>
+  <app-menu></app-menu>
+</div>
 <router-outlet></router-outlet>
-<app-menu></app-menu>
+
