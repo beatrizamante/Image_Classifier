@@ -3,12 +3,12 @@
   <div class="card card-compact shadow-xl">
   <figure>
     <img
-      src="assets/images/avatar.jpeg"
+      [src]="game.background_image"
       alt="Games"
       class="rounded-xl p-2"
       />
   </figure>
   <div class="card-body text-white text-center">
-    <p>Playing Rise of the Tomb Raider on Romaning Server</p>
+    <p>Playing {{ game.name }} on Romaning Server</p>
   </div>
 </div>
