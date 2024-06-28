@@ -36,6 +36,7 @@ export class LoginScreenComponent implements OnInit {
       alert(
         'Usuário ou senha incorreto'
       );
+      
     }
   }
 }

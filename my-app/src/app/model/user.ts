@@ -14,6 +14,5 @@ export class User {
         u.password = user.password; 
 
         return u; 
-
     }
 }

@@ -18,7 +18,7 @@ export class StartScreenComponent implements OnInit{
   ngOnInit(): void {
     this.rawgService.getGames().then(response => {
       this.games = response.data.results;
-      console.log(this.games)
+      //console.log(this.games)
     }).catch(error => {
       console.error('Failed to fetch games', error);
     });
