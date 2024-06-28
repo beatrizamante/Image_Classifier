@@ -1,7 +1,7 @@
-<div class="container bg-zinc-900">
+<div class="container bg-zinc-900 flex flex-col">
   <div class="row">
     <div class="col-lg-4 col-md-6 mb-4 bg-zinc-900" *ngFor="let game of games">
-      <app-cards [game]="game"></app-cards>
+      <app-cards class="z-10" [game]="game"></app-cards>
     </div>
   </div>
 </div>
