@@ -8,7 +8,7 @@ import { SignInScreenComponent } from '../components/sign-in-screen/sign-in-scre
 import { LanguageSelectionComponent } from '../components/language-selection/language-selection.component';
 import { ForgotPasswordScreenComponent } from '../components/forgot-password-screen/forgot-password-screen.component';
 import { LoginScreenComponent } from '../components/login-screen/login-screen.component';
-import { AuthenticationGuard } from '../app/util/authentication.guard'
+import { AuthenticationGuard } from './util/authentication.guard'
 import { NgModule } from '@angular/core';
 
 
