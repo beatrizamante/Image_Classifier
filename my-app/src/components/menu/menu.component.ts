@@ -42,7 +42,7 @@ export class MenuComponent implements OnInit {
         this.selectedMenu = 'account';
         break;
       default:
-        this.selectedMenu = 'home'; // Default to 'home' for unrecognized routes
+        this.selectedMenu = 'home';
         break;
     }
   }
