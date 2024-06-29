@@ -8,14 +8,23 @@ import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from '../components/menu/menu.component';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { GameComponent } from '../components/game/game.component';
+import { Game } from './model/game';
+import { RawgApiService } from './rawg-api.service'
 
 @Component({
   selector: 'app-root',
   standalone: true,
+<<<<<<< Updated upstream
   imports: [CommonModule, RouterOutlet, MenuComponent, NavbarComponent, FormsModule],
+=======
+  imports: [CommonModule ,RouterOutlet, MenuComponent, NavbarComponent, FormsModule, GameComponent],
+>>>>>>> Stashed changes
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+
 })
+<<<<<<< Updated upstream
 export class AppComponent implements AfterViewInit, OnDestroy {
   private routerEventSubscription!: Subscription;
 
@@ -32,13 +41,35 @@ export class AppComponent implements AfterViewInit, OnDestroy {
       }
     });
   }
+=======
+export class AppComponent {
+  title = 'my-app';
+  game = new RawgApiService; 
+ 
+  
+  constructor(private router: Router) {
+     //GameComponent.insertGame(this.game.getGames())
+  };
+  
+  ngOnInit(): void {
+    this.game.getGames().then(resp => {
+      GameComponent.insertGame((resp.data.results));
+    })
+  }
+  
+>>>>>>> Stashed changes
 
   showNavbarAndMenu(): boolean {
     const noNavRoutes = ['/', '/forgot-password-screen', '/sign-in-screen'];
     return !noNavRoutes.includes(this.router.url);
+<<<<<<< Updated upstream
   }
 
   ngOnDestroy(): void {
     this.routerEventSubscription.unsubscribe();
   }
+=======
+    
+}
+>>>>>>> Stashed changes
 }

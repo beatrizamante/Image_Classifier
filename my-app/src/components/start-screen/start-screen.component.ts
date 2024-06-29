@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RawgApiService } from '../../app/rawg-api.service';
 import { CommonModule } from '@angular/common';
 import { BannerComponent } from '../banner/banner.component'
+import { GameComponent } from '../game/game.component';
 
 @Component({
     selector: 'app-start-screen',
@@ -16,11 +17,13 @@ export class StartScreenComponent implements OnInit{
   constructor(private rawgService: RawgApiService) {}
 
   ngOnInit(): void {
-    this.rawgService.getGames().then(response => {
+    this.games = GameComponent.getGames(); 
+
+    /*this.rawgService.getGames().then(response => {
       this.games = response.data.results;
       //console.log(this.games)
     }).catch(error => {
       console.error('Failed to fetch games', error);
-    });
+    });*/
   }
 }
