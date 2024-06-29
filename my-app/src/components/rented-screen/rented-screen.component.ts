@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { CardsComponent } from "../cards_list/cards.component";
 import { CommonModule } from '@angular/common';
 import { RawgApiService } from '../../app/rawg-api.service';
+import { FilterComponent } from "../filter/filter.component";
 
 @Component({
     selector: 'app-rented-screen',
     standalone: true,
     templateUrl: './rented-screen.component.html',
     styleUrl: './rented-screen.component.css',
-    imports: [CardsComponent,CommonModule]
+    imports: [CardsComponent, CommonModule, FilterComponent]
 })
 export class RentedScreenComponent {
   games: any[] = [];
