@@ -17,15 +17,17 @@
       <img src="assets/images/logo.png" alt="">
     </div>
     <div class="w-full max-w-xs">
-      <label class="flex items-center gap-2 mb-4 relative custom-input">
-        <input type="text" class="text-2xl h-12 bg-zinc-500 grow rounded-bl-[32px] text-center pt-4 pb-2 border-t-4 border-t-zinc-400 focus:border-orange-500" placeholder="Email_" />
-      </label>
-      <label class="flex items-center gap-2 relative custom-input">
-        <input type="password" class="text-2xl h-12 grow bg-zinc-500 rounded-bl-[32px] text-center pt-4 pb-2 border-t-4 border-t-zinc-400 focus:border-orange-500" placeholder="Password_" />
-      </label>
-      <button class="border-solid border-zinc-500 border-2 ml-12 mt-4 px-4 py-2 rounded-bl-[32px] text-zinc-300 text-xl text-center ">
-        Create Account
-      </button>
+      <form>
+        <label class="flex items-center gap-2 mb-4 relative custom-input">
+          <input type="text" class="text-2xl h-12 bg-zinc-500 grow rounded-bl-[32px] text-center pt-4 pb-2 border-t-4 border-t-zinc-400 focus:border-orange-500" placeholder="Email_" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+        </label>
+        <label class="flex items-center gap-2 relative custom-input">
+          <input type="password" class="text-2xl h-12 grow bg-zinc-500 rounded-bl-[32px] text-center pt-4 pb-2 border-t-4 border-t-zinc-400 focus:border-orange-500" placeholder="Password_" />
+        </label>
+        <button type="submit" class="border-solid border-zinc-500 border-2 ml-12 mt-4 px-4 py-2 rounded-bl-[32px] text-zinc-300 text-xl text-center ">
+          Create Account
+        </button>
+      </form>
     </div>
     <p class="text-center text-sm mt-4 text-orange-500">By creating an account, you’re agreeing to our Terms & Privacy and are at least 16.</p>
     <div class="flex justify-center mt-4">
