@@ -35,7 +35,6 @@ export class BrowseScreenComponent {
 
   ifFree(game: Game){
     let list: any[] = this.db.getArray('freeForRent'); 
-    console.log(list)
     let nome = game.name;
     if(list.length > 0){
           for(let i = 0; i < list.length; i++){
