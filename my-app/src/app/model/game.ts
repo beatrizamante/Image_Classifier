@@ -4,19 +4,22 @@ export class Game {
     name: string;
     release: string;
     background: string; 
+    status?: string;
 
     constructor(
         id: number,
         slug:string,
         name: string,
         release: string,
-        background: string
+        background: string,
+        status?: string
     ){
         this.id = id; 
         this.slug = slug;
         this.name = name; 
         this.release = release;
         this.background = background;
+        this.status = status;
     }
 
     public static clone(game: Game){
@@ -27,6 +30,7 @@ export class Game {
         g.name = game.name;
         g.release = game.release;
         g.background = game.background;
+        g.status = game.status; 
         return g; 
     }
 }

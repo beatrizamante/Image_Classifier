@@ -19,8 +19,10 @@ export class GameComponent {
         'name': el.name,
         'slug': el.slug,
         'background_image': el.background_image,
-        'released': el.released
-      }
+        'released': el.released,
+        'status': el.slug
+      };
+      console.log(game); 
          localStorage.setItem(`game${index}`, JSON.stringify(game));
     })
   }
