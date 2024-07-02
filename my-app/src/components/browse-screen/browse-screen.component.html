@@ -4,7 +4,7 @@
       <p class="text-white text-xl ml-6">Popular</p>
       <app-filter></app-filter>
     </div>
-    <div class="flex flex-wrap -mx-2 pb-10">
+    <div class="flex flex-wrap -mx-2 ">
       <div class="grid justify-items-center w-1/2 lg:w-1/4 px-2 mb-4" *ngFor="let game of games">
         <app-cards-to-rent [game]="game" *ngIf="ifFree(game)"></app-cards-to-rent>
       </div>
