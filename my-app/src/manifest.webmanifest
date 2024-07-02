@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "short_name": "my-app",
-  "theme_color": "#000000",
+  "theme_color": "green",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
