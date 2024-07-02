@@ -1,6 +1,6 @@
 {
-  "name": "my-app",
-  "short_name": "my-app",
+  "name": "nerdCloud",
+  "short_name": "nerdCloud",
   "theme_color": "green",
   "background_color": "#fafafa",
   "display": "standalone",
