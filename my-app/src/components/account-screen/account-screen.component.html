@@ -6,7 +6,29 @@
       </div>
     </div>
     <div class="ml-4">
-      <p class="text-white text-xl">accountName</p>
+      <p class="text-white text-xl">
+        <input class="bg-transparent"
+               type="text"
+               name="accountName"
+               id="accountName"
+               [(ngModel)]="accountName"
+               (blur)="updateAccountName()"
+               (keydown.enter)="updateAccountName()"
+               >
+      </p>
+      <form>
+        <label for="birthday" class="text-white">Input Birthday </label>
+        <input class="bg-transparent text-white"
+               type="date"
+               name="birthday"
+               id="birthday"
+               [(ngModel)]="birthday"
+               placeholder="YYYY-MM-DD"
+        >
+      </form>
+      <p class="text-white">
+        birthday_  {{ birthday | date }}
+      </p>
       <span class="text-yellow-500 text-sm font-bold">Premium Membership</span>
     </div>
   </div>
