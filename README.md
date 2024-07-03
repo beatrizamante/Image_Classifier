@@ -6,6 +6,8 @@ Project for renting games in a Netflix-like platform
 
 #Video: https://drive.google.com/file/d/1UFI-jYBTl_OBP9uMil-q4WDPuzstR0T7/view?usp=drive_link
 
+#Webpage: https://beatrizamante.github.io/nerdCloud2.0/ (WIP)
+
 #Checklist:
 
 RA1 - Prototipar e projetar interfaces gráficas de usuário, considerando princípios de usabilidade e experiência do usuário.
