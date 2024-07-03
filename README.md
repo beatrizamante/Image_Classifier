@@ -4,6 +4,8 @@ Project for renting games in a Netflix-like platform
 #Prototype: 
   https://www.figma.com/file/w9FBVoVLvc6Cautshaap91/nerdCloud?type=design&node-id=0%3A1&mode=design&t=LuQE2skOIjvypYUk-1
 
+#Video: https://drive.google.com/file/d/1UFI-jYBTl_OBP9uMil-q4WDPuzstR0T7/view?usp=drive_link
+
 #Checklist:
 
 RA1 - Prototipar e projetar interfaces gráficas de usuário, considerando princípios de usabilidade e experiência do usuário.
